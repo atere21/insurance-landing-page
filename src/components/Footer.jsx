@@ -1,46 +1,74 @@
 import React from 'react';
 import logo from "../assets/logo_sanlam.png";
+import { FaPhoneAlt, FaYoutube, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { IoLocationSharp, IoLogoFacebook } from 'react-icons/io5';
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div name="footer" className='max-w-[1200px] h-auto bg-white text-black px-2 relative'>
-      <div className='md:mx-auto grid md:grid-cols-6 py-8 mx-[2rem] w-full '>
-        <div className='md:col-span-2 flex items-center justify-center md:justify-start w-[50%]'>
-          <img className='md:my-0 mx-12 w-60'  src={logo} alt='/' />
+    <div>
+        <div className='flex flex-col md:flex-row justify-between mb-3 p-10'>
+            <div>
+            <img src={logo} className='w-[210px]' alt='Sanlam logo' />
+            <div className='flex flex-col mt-10 md:flex-row md:items-center'>
+          <FaPhoneAlt className='w-[13px]' />
+          <div className='ml-3'>
+            <p>01-9054444</p>
+            <p>01-9054365</p>
+          </div>
         </div>
-        <div className='md:col-span-3 flex flex-col md:flex-row md:justify-between w-[50%] md:ml-[10%] mt-4 md:mt-0'>
-          <div className='mb-6 md:mb-0'>
-            <h6 className='font-bold uppercase pt-2 pb-2 text-blue-600 text-xl'>Our Products</h6>
-            <ul className='text-sm'>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Retail</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Corporate</li>
-              {/* Add more items as needed */}
-            </ul>
-          </div>
-          <div className='mb-6 md:mb-0'>
-            <h6 className='font-bold uppercase pt-2 text-blue-600 pb-2  text-xl'>About Us</h6>
-            <ul className='text-sm'>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Sanlam Nigeria</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Our Values</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>FAQs</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Whistleblowing-policy</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Privacy Statement</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Privacy Policy</li>
-              {/* Add more items as needed */}
-            </ul>
-          </div>
-          <div>
-            <h6 className='font-bold uppercase pt-2 pb-2 text-blue-600 text-xl'>Contact Us</h6>
-            <ul className='text-sm'>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Contact Us</li>
-              <li className='py-1 hover:text-gray-300 cursor-pointer'>Find Our Sales Outlets</li>
-              {/* Add more items as needed */}
-            </ul>
-          </div>
+        <div className='flex flex-row items-center mt-2'>
+          <IoMdMail className='w-[13px]' />
+          <p className='ml-3'>wecare@sanlam.com.ng</p>
+        </div>
+        <div className='flex flex-row items-center mt-2'>
+          <IoLocationSharp className='w-[13px]' />
+          <p className='ml-3 text-sm'>NIPOST Building Marina, 34 Marina Rd, Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div className='flex flex-col mt-2 md:mt-0 md:flex-row w-[50%] grid-cols-3'>
+        <div className='mr-4 lg:mr-10'>
+          <p className='text-xl font-semibold text-[#007dcc] mb-4'>Our Products</p>
+          <p className='text-sm mb-2 text-[#414141]'>Retail</p>
+          <p className='text-sm text-[#414141]'>Cooperate</p>
+        </div>
+
+        <div className='mr-4 lg:mr-10'>
+          <p className='text-xl font-semibold text-[#007dcc] mb-4'>About Us</p>
+          <p className='text-sm mb-2 text-[#414141]'>Sanlam Nigeria</p>
+          <p className='text-sm mb-2 text-[#414141]'>Our Values</p>
+          <p className='text-sm mb-2 text-[#414141]'>FAQs</p>
+          <p className='text-sm mb-2 text-[#414141]'>Whistleblowing-policy</p>
+          <p className='text-sm mb-2 text-[#414141]'>Privacy Statement</p>
+          <p className='text-sm mb-2 text-[#414141]'>Privacy Policy</p>
+        </div>
+        <div>
+          <p className='text-xl font-semibold text-[#007dcc] mb-4'>Contact Us</p>
+          <p className='text-sm mb-2 text-[#414141]'>Contact Us</p>
+          <p className='text-sm mb-2 text-[#414141]'>Find our sales outlets</p>
         </div>
       </div>
     </div>
+
+    <div className='flex flex-col md:flex-row justify-between mb-5 p-10'>
+      <div>
+        <p className='text-xs'>Copyright © 2022. Sanlam Life Insurance Ltd. RC 707564</p>
+        <p className='text-xs'>All Rights Reserved and also Authorized and Regulated by the National Insurance Commission. RIC NO. 050</p>
+      </div>
+      <div className='flex flex-row mt-0 md:mt-2 pr-10'>
+        <FaYoutube className='text-xl text-[#007dcc] mr-7' />
+        <FaTwitter className='text-xl text-[#007dcc] mr-7' />
+        <FaInstagram className='text-xl text-[#007dcc] mr-7' />
+        <IoLogoFacebook className='text-xl text-[#007dcc] mr-7' />
+        <FaLinkedin className='text-xl text-[#007dcc] mr-10' />
+      </div>
+    </div>
+
+    
+        </div>
   )
 }
 
-export default Footer;
+export default Footer
+
+

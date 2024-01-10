@@ -29,10 +29,10 @@ const Navbar = () => {
         )}
       </div>
 
-      <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full bg-white text-black ease-in-out duration-500' : 'fixed left-[-100%]'}>
+      <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full bg-white text-black ease-in-out duration-500 z-[100]' : 'fixed left-[-100%]'}>
         <img className="w-[10rem] h-22 object-contain mt-4 font-bold" alt='/' src={logo} />
 
-        <ul className="p-4 uppercase flex flex-col items-center justify-center h-full font-semibold">
+        <ul className="p-4 uppercase flex flex-col items-center justify-center h-full font-semibold z-50">
           <li className="p-6 cursor-pointer">Home</li>
           <li className="p-6 cursor-pointer">Product</li>
           <li className="p-6 cursor-pointer">Blog</li>

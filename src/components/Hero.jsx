@@ -17,7 +17,8 @@ const Hero = () => {
           </div>
           <div className='flex mt-8 justify-center'>
             <button className='text-white mr-5 bg-blue-600 p-2 rounded-md'>Buy Insurance</button>
-            <button className='bg-transparent p-2 rounded-md border border-blue-600 text-blue-600'>Get Recommendations</button>
+            <button className='bg-transparent p-2 rounded-md border border-blue-600
+             text-blue-600 hover:bg-blue-700 hover:text-white translate-x-0 duration-20'>Get Recommendations</button>
           </div>
         </div>
         <div className='justify-center mx-auto flex'>
